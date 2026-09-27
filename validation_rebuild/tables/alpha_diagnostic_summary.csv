@@ -1,9 +1,0 @@
-period,diagnostic,Spearman,N
-train,PCC,0.8503453427550857,2178
-train,NRMSE,-0.8147878134296819,2178
-train,abs_trend_difference,-0.35744006289253705,2178
-train,abs_annual_difference,0.06430806783553411,2178
-test,PCC,0.7120490288407206,2178
-test,NRMSE,-0.6731546111743657,2178
-test,abs_trend_difference,-0.06986141231178263,2178
-test,abs_annual_difference,0.07776003263784305,2178
