@@ -1,0 +1,286 @@
+[
+  {
+    "figure": "Fig02_alpha_beta_validation",
+    "question": "Do frozen credibility weights have interpretable structure?",
+    "archetype": "quantitative grid / maps plus paired summaries",
+    "panels": "a-b maps; c distributions; d-g alpha diagnostics; h-j omitted-source minus full beta; k-l robustness.",
+    "sources": [
+      "weight_land_source_data.csv",
+      "alpha_diagnostics_train_cells.csv",
+      "beta_leave_one_source_out.csv",
+      "cache/rebuilt_weights"
+    ]
+  },
+  {
+    "figure": "Fig03_coarse_fidelity",
+    "question": "How well is GRACE-resolvable variability preserved?",
+    "archetype": "quantitative grid / maps plus paired summaries",
+    "panels": "a-e common-support global summaries; f-j temporal RMSE maps; k-l paired RMSE maps.",
+    "sources": [
+      "coarse_full_metrics.csv",
+      "coarse_monthly_metrics.csv",
+      "cache/coarse_diagnostics.nc"
+    ]
+  },
+  {
+    "figure": "Fig04_temporal_structure",
+    "question": "Which temporal components are preserved?",
+    "archetype": "quantitative grid / maps plus paired summaries",
+    "panels": "Rows: three-year diagnostic trend, annual amplitude, semiannual amplitude. Columns: JPL, M4, WGHM, absolute-error ECDFs.",
+    "sources": [
+      "cache/coarse_diagnostics.nc"
+    ]
+  },
+  {
+    "figure": "Fig05_scale_dependent_spectra",
+    "question": "Does added variability depend on scale and beta?",
+    "archetype": "quantitative grid / maps plus paired summaries",
+    "panels": "a median with monthly IQR; b-c fixed January 2020 and July 2021; d-f frozen beta strata. Masked FFT in normalized wavenumber; not physical km spectrum.",
+    "sources": [
+      "spectral_monthly.csv"
+    ]
+  },
+  {
+    "figure": "Fig06_spatial_variability",
+    "question": "How much spatial variability is added?",
+    "archetype": "quantitative grid / maps plus paired summaries",
+    "panels": "Rows JPL, WGHM, M0, M1, M4; columns TWSA, fixed Gaussian high-pass, temporal high-pass RMS.",
+    "sources": [
+      "cache/spatial_snapshots.nc",
+      "highpass_metrics.csv"
+    ]
+  },
+  {
+    "figure": "Fig07_smap_validation",
+    "question": "Do reconstructed signals agree with SMAP?",
+    "archetype": "quantitative grid / maps plus paired summaries",
+    "panels": "a-c PCC maps; d ECDF; e-h paired grid differences (display saturation at +/-0.2); i spatial block bootstrap.",
+    "sources": [
+      "smap_common_grid_correlations.csv",
+      "smap_pairwise_global.csv"
+    ]
+  },
+  {
+    "figure": "Fig08_weight_gain_associations",
+    "question": "Are external gains associated with credibility weights?",
+    "archetype": "quantitative grid / maps plus paired summaries",
+    "panels": "a joint tertiles with N; b-c marginal bins; d-e density with bin medians; f exploratory high-pass energy inheritance. Associations do not establish causality.",
+    "sources": [
+      "alpha_beta_joint_gains.csv",
+      "smap_common_grid_correlations.csv",
+      "HFI_summary.csv"
+    ]
+  },
+  {
+    "figure": "Fig09_complete_regional_gains",
+    "question": "Where are gains and failures located?",
+    "archetype": "quantitative grid / maps plus paired summaries",
+    "panels": "a signed 5-degree map; b full ranking; c ECDF; d four paired distributions; e-f weight associations. All eligible regions included.",
+    "sources": [
+      "all_5deg_regions.csv"
+    ]
+  },
+  {
+    "figure": "Fig10_regional_cases",
+    "question": "What do two positive cases and one failure look like?",
+    "archetype": "quantitative grid / maps plus paired summaries",
+    "panels": "Rows selected positive, positive, strongest negative; columns location/gain, M4 January 2020 TWSA, M1 TWSA, common-support standardized time series. Post-hoc exploratory cases; full ranks retained.",
+    "sources": [
+      "regional_cases/selected_cases.csv",
+      "regional_case_timeseries.csv",
+      "cache/spatial_snapshots.nc"
+    ]
+  },
+  {
+    "figure": "Fig11_groundwater_validation",
+    "question": "Is groundwater consistency improved?",
+    "archetype": "quantitative grid / maps plus paired summaries",
+    "panels": "a qualifying wells; b-d grid-median well PCC on shared [-1,1] scale; e complete ECDF; f paired spatial block bootstrap. WGHM non-groundwater subtraction is model dependent.",
+    "sources": [
+      "groundwater_well_correlations.csv",
+      "groundwater_common_grid_correlations.csv",
+      "groundwater_pairwise_global.csv"
+    ]
+  },
+  {
+    "figure": "Fig12_baseline_benchmark",
+    "question": "How do coarse fidelity, added variance and external skill trade off?",
+    "archetype": "quantitative grid / maps plus paired summaries",
+    "panels": "a visualization-only magnitude normalization (not overall skill ranking); b coarse fidelity vs SMAP; c coarse fidelity vs high-pass RMS; d median spectra with IQR.",
+    "sources": [
+      "baseline_full_metrics.csv",
+      "spectral_monthly.csv"
+    ]
+  },
+  {
+    "figure": "FigS01_source_coverage",
+    "question": "Is auxiliary evidence coverage heterogeneous?",
+    "archetype": "quantitative grid / maps plus paired summaries",
+    "panels": "source_count, valid_time_count, valid_months_era5_twsa, valid_months_gldas_noah_twsa, valid_months_clm5_twsa",
+    "sources": [
+      "cache/rebuilt_weights"
+    ]
+  },
+  {
+    "figure": "FigS03_beta_robustness",
+    "question": "Is auxiliary evidence coverage heterogeneous?",
+    "archetype": "quantitative grid / maps plus paired summaries",
+    "panels": "beta_without_era5_twsa, beta_without_gldas_noah_twsa, beta_without_clm5_twsa",
+    "sources": [
+      "cache/rebuilt_weights"
+    ]
+  },
+  {
+    "figure": "FigS02_alpha_test_diagnostics",
+    "question": "Do non-construction relationships persist in test?",
+    "archetype": "quantitative grid / maps plus paired summaries",
+    "panels": "a-d test diagnostics.",
+    "sources": [
+      "alpha_diagnostics_test_cells.csv"
+    ]
+  },
+  {
+    "figure": "FigS04_training_trajectories",
+    "question": "Were models trained with the same budget?",
+    "archetype": "quantitative grid / maps plus paired summaries",
+    "panels": "a training and b validation objectives; differing alpha/beta terms mean objectives are not equal physical error measures.",
+    "sources": [
+      "training_M0_source.csv",
+      "training_M1_source.csv",
+      "training_M2_source.csv",
+      "training_M3_source.csv",
+      "training_M4_source.csv"
+    ]
+  },
+  {
+    "figure": "FigS05_raw_corrected",
+    "question": "What does frozen postprocessing change?",
+    "archetype": "quantitative grid / maps plus paired summaries",
+    "panels": "a raw; b corrected monthly spatial RMSE.",
+    "sources": [
+      "coarse_monthly_metrics.csv"
+    ]
+  },
+  {
+    "figure": "FigS06_complete_spatial_output",
+    "question": "How do all five ablations differ spatially?",
+    "archetype": "quantitative grid / maps plus paired summaries",
+    "panels": "a-e complete high-pass RMS; f ECDF.",
+    "sources": [
+      "cache/spatial_snapshots.nc"
+    ]
+  },
+  {
+    "figure": "FigS07_secondary_coarse_metrics",
+    "question": "Do secondary fidelity diagnostics agree?",
+    "archetype": "quantitative grid / maps plus paired summaries",
+    "panels": "a MAE; b median NSE; c semiannual amplitude MAE.",
+    "sources": [
+      "coarse_full_metrics.csv"
+    ]
+  },
+  {
+    "figure": "FigS08_full_smap_pairs",
+    "question": "Which external comparisons improve or deteriorate?",
+    "archetype": "quantitative grid / maps plus paired summaries",
+    "panels": "Complete paired difference maps, +/-0.2 display saturation; full untruncated values in source table.",
+    "sources": [
+      "smap_common_grid_correlations.csv"
+    ]
+  },
+  {
+    "figure": "FigS09_full_region_comparisons",
+    "question": "Are regional gains shared across all ablations?",
+    "archetype": "quantitative grid / maps plus paired summaries",
+    "panels": "a-d every eligible region against each ablation.",
+    "sources": [
+      "all_5deg_regions.csv"
+    ]
+  },
+  {
+    "figure": "FigS11_full_spectrum_context",
+    "question": "How does spatial structure vary with regional context?",
+    "archetype": "quantitative grid / maps plus paired summaries",
+    "panels": "a-c all-model spectra; d-f frozen regional covariates.",
+    "sources": [
+      "spectral_monthly.csv",
+      "weight_land_source_data.csv"
+    ]
+  },
+  {
+    "figure": "FigS10_loss_scale_audit",
+    "question": "What are the objective term magnitudes?",
+    "archetype": "quantitative grid / maps plus paired summaries",
+    "panels": "a raw loss terms; b total objective; 48 forward-only batches of 4 training tiles evenly sampled through dataset. No optimization.",
+    "sources": [
+      "loss_scale_checkpoint_batches.csv"
+    ]
+  },
+  {
+    "figure": "FigS12_complete_joint_strata",
+    "question": "Are stratified patterns consistent across ablations?",
+    "archetype": "quantitative grid / maps plus paired summaries",
+    "panels": "a-c complete joint alpha-beta gains against M0/M2/M3; M1 in main Fig8.",
+    "sources": [
+      "alpha_beta_joint_gains.csv"
+    ]
+  },
+  {
+    "figure": "FigS13_predefined_regions",
+    "question": "How do signals behave in predefined geographic contexts?",
+    "archetype": "quantitative grid / maps plus paired summaries",
+    "panels": "a Amazon; b Sahara; c Indo-Gangetic; d Alaska. Bounds declared before performance calculation; all four retained, including missing-support behavior.",
+    "sources": [
+      "predefined_and_fixed_region_timeseries.csv",
+      "audit/predefined_regions.md"
+    ]
+  },
+  {
+    "figure": "FigS14_baseline_maps",
+    "question": "How do traditional baselines allocate spatial variability?",
+    "archetype": "quantitative grid / maps plus paired summaries",
+    "panels": "a-c fixed-month TWSA; d-f high-pass RMS for MLR/RF/M4.",
+    "sources": [
+      "cache/spatial_snapshots.nc"
+    ]
+  },
+  {
+    "figure": "FigS15_regional_case_1",
+    "question": "What supports or limits each exploratory regional case?",
+    "archetype": "quantitative grid / maps plus paired summaries",
+    "panels": "a-b frozen alpha/beta; c-g JPL/WGHM/M0/M1/M4; h SMAP correlation; i paired gain; j standardized series; k median spectra; l all four paired gains and true rank. Location in main Fig10.",
+    "sources": [
+      "regional_cases/selected_cases.csv",
+      "regional_case_timeseries.csv",
+      "regional_spectral_monthly.csv",
+      "smap_common_grid_correlations.csv",
+      "cache/spatial_snapshots.nc"
+    ]
+  },
+  {
+    "figure": "FigS16_regional_case_2",
+    "question": "What supports or limits each exploratory regional case?",
+    "archetype": "quantitative grid / maps plus paired summaries",
+    "panels": "a-b frozen alpha/beta; c-g JPL/WGHM/M0/M1/M4; h SMAP correlation; i paired gain; j standardized series; k median spectra; l all four paired gains and true rank. Location in main Fig10.",
+    "sources": [
+      "regional_cases/selected_cases.csv",
+      "regional_case_timeseries.csv",
+      "regional_spectral_monthly.csv",
+      "smap_common_grid_correlations.csv",
+      "cache/spatial_snapshots.nc"
+    ]
+  },
+  {
+    "figure": "FigS17_regional_case_3",
+    "question": "What supports or limits each exploratory regional case?",
+    "archetype": "quantitative grid / maps plus paired summaries",
+    "panels": "a-b frozen alpha/beta; c-g JPL/WGHM/M0/M1/M4; h SMAP correlation; i paired gain; j standardized series; k median spectra; l all four paired gains and true rank. Location in main Fig10.",
+    "sources": [
+      "regional_cases/selected_cases.csv",
+      "regional_case_timeseries.csv",
+      "regional_spectral_monthly.csv",
+      "smap_common_grid_correlations.csv",
+      "cache/spatial_snapshots.nc"
+    ]
+  }
+]

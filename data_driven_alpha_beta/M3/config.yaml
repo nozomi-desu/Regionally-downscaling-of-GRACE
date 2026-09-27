@@ -1,0 +1,42 @@
+model_name: M3_fixed_alpha_data_beta
+experiment_definition: clean_corrected_mm_cold_start
+dataset:
+  zarr_path: /home/user02/grace_remote_train/data_processed/training_rescue_v2/grace_downscaling_training_dataset_mm_area.zarr
+  tile_size: 60
+  stride_train: 30
+  stride_eval: 60
+  coarse_factor: 6
+  min_valid_fraction: 0.05
+  min_land_fraction: 0.05
+  weight_files:
+    alpha_value_weight: {path: /home/user02/grace_remote_train/data_driven_alpha_beta/weights/alpha_data_driven.nc, variable: alpha}
+    beta_gradient_weight: {path: /home/user02/grace_remote_train/data_driven_alpha_beta/weights/beta_data_driven.nc, variable: beta}
+  channel_overrides:
+    alpha_value_weight: 0.4623363684
+model: {architecture: baseline_unet, base_channels: 32, dropout: 0.05, residual_to_coarse: true}
+loss:
+  mode: rwsc_static
+  coarse_factor: 6
+  mass_weight: 1.0
+  value_weight: 0.12
+  gradient_weight: 0.18
+  fine_weight: 0.12
+  spectral_weight: 0.55
+  basin_weight: 0.25
+  spectral_loss: {enabled: true, kernel_size: 13, sigma: 3.0, w_low: 0.28, w_high: 0.02}
+  basin_integral_loss: {enabled: true, reference: jpl, min_cells: 12}
+regional_weights: {}
+postprocess: {apply_mass_closure_correction: true, mass_closure_blend_factor: 0.05, mass_closure_max_residual_abs: 1.0, save_raw_prediction: true, save_corrected_prediction: true}
+training:
+  seed: 42
+  deterministic: true
+  init_checkpoint: null
+  output_dir: /home/user02/grace_remote_train/data_driven_alpha_beta/M3/training
+  batch_size: 4
+  num_workers: 2
+  epochs: 120
+  learning_rate: 0.0003
+  min_learning_rate: 0.000003
+  weight_decay: 0.0001
+  evaluate_test_after_training: false
+

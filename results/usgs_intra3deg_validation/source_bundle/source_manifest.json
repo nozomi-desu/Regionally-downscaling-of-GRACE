@@ -1,0 +1,164 @@
+{
+  "models": [
+    {
+      "paper_model": "M0",
+      "project_model": "M0",
+      "path": "/home/user02/grace_remote_train/data_driven_alpha_beta/M0/inference/test.nc",
+      "sha256": "d66769a2e69c8f8de99d2ca7d51a0b3e97391e6d0f20d6613d9631b0a902c940",
+      "checkpoint": "/home/user02/grace_remote_train/data_driven_alpha_beta/M0/training/checkpoints/best.pt",
+      "checkpoint_sha256": "81320a125b11fd56a5cbb5605409496c4c176c5ad9cb1aece5eb5bdb5d097060",
+      "attrs": {
+        "checkpoint": "/home/user02/grace_remote_train/data_driven_alpha_beta/M0/training/checkpoints/best.pt",
+        "split": "test",
+        "tile_size": 60,
+        "stride": 60,
+        "coarse_factor": 6,
+        "default_prediction_variant": "corrected",
+        "mass_closure_correction_applied": "true",
+        "mass_closure_blend_factor": 0.05,
+        "strict_mass_projection_applied": "false",
+        "strict_mass_projection_operator": "masked_coslat_area_weighted_block_mean",
+        "strict_mass_projection_refinement_steps": 2,
+        "regional_weight_adjustment_applied": "false",
+        "reliability_gate_exported": "false",
+        "reliability_gate_interpretation": "sigmoid gate multiplying the area-centered high-frequency residual; not an independently calibrated probability"
+      }
+    },
+    {
+      "paper_model": "M1",
+      "project_model": "M1",
+      "path": "/home/user02/grace_remote_train/data_driven_alpha_beta/M1/inference/test.nc",
+      "sha256": "756281537d5808970b0d250427c34a1b69bed98d05946942658c682ee3635c05",
+      "checkpoint": "/home/user02/grace_remote_train/data_driven_alpha_beta/M1/training/checkpoints/best.pt",
+      "checkpoint_sha256": "5efe328ea700cc5052c6718c8caf9349831198c0fc545d43ab2c22f3b2c060a1",
+      "attrs": {
+        "checkpoint": "/home/user02/grace_remote_train/data_driven_alpha_beta/M1/training/checkpoints/best.pt",
+        "split": "test",
+        "tile_size": 60,
+        "stride": 60,
+        "coarse_factor": 6,
+        "default_prediction_variant": "corrected",
+        "mass_closure_correction_applied": "true",
+        "mass_closure_blend_factor": 0.05,
+        "strict_mass_projection_applied": "false",
+        "strict_mass_projection_operator": "masked_coslat_area_weighted_block_mean",
+        "strict_mass_projection_refinement_steps": 2,
+        "regional_weight_adjustment_applied": "false",
+        "reliability_gate_exported": "false",
+        "reliability_gate_interpretation": "sigmoid gate multiplying the area-centered high-frequency residual; not an independently calibrated probability"
+      }
+    },
+    {
+      "paper_model": "M2",
+      "project_model": "M2",
+      "path": "/home/user02/grace_remote_train/data_driven_alpha_beta/M2/inference/test.nc",
+      "sha256": "ebc9b528cf09bf3f8aca08700189219a1001e0663f97e24f40bb7f1aa459217e",
+      "checkpoint": "/home/user02/grace_remote_train/data_driven_alpha_beta/M2/training/checkpoints/best.pt",
+      "checkpoint_sha256": "49d5b74900c9773d4b865de95a51734efa769f83ba024e32fb9bbb75a7b2f57d",
+      "attrs": {
+        "checkpoint": "/home/user02/grace_remote_train/data_driven_alpha_beta/M2/training/checkpoints/best.pt",
+        "split": "test",
+        "tile_size": 60,
+        "stride": 60,
+        "coarse_factor": 6,
+        "default_prediction_variant": "corrected",
+        "mass_closure_correction_applied": "true",
+        "mass_closure_blend_factor": 0.05,
+        "strict_mass_projection_applied": "false",
+        "strict_mass_projection_operator": "masked_coslat_area_weighted_block_mean",
+        "strict_mass_projection_refinement_steps": 2,
+        "regional_weight_adjustment_applied": "false",
+        "reliability_gate_exported": "false",
+        "reliability_gate_interpretation": "sigmoid gate multiplying the area-centered high-frequency residual; not an independently calibrated probability"
+      }
+    },
+    {
+      "paper_model": "M3",
+      "project_model": "M3",
+      "path": "/home/user02/grace_remote_train/data_driven_alpha_beta/M3/inference/test.nc",
+      "sha256": "79002ede3aefe5d42dcf80ce04287aecc77c96ae230bb6af1797b0bad73387cd",
+      "checkpoint": "/home/user02/grace_remote_train/data_driven_alpha_beta/M3/training/checkpoints/best.pt",
+      "checkpoint_sha256": "ffd1ff349dc1567b0c8d54b2bce090e122912a55926884f46e6f242a21fe493e",
+      "attrs": {
+        "checkpoint": "/home/user02/grace_remote_train/data_driven_alpha_beta/M3/training/checkpoints/best.pt",
+        "split": "test",
+        "tile_size": 60,
+        "stride": 60,
+        "coarse_factor": 6,
+        "default_prediction_variant": "corrected",
+        "mass_closure_correction_applied": "true",
+        "mass_closure_blend_factor": 0.05,
+        "strict_mass_projection_applied": "false",
+        "strict_mass_projection_operator": "masked_coslat_area_weighted_block_mean",
+        "strict_mass_projection_refinement_steps": 2,
+        "regional_weight_adjustment_applied": "false",
+        "reliability_gate_exported": "false",
+        "reliability_gate_interpretation": "sigmoid gate multiplying the area-centered high-frequency residual; not an independently calibrated probability"
+      }
+    },
+    {
+      "paper_model": "M4",
+      "project_model": "M5",
+      "path": "/home/user02/grace_remote_train/data_driven_alpha_beta/M5/inference/test.nc",
+      "sha256": "4958201adfaff6162f6403e2a793d4c5e2b55b4dd8b8e1992a16f37fa01c2fff",
+      "checkpoint": "/home/user02/grace_remote_train/data_driven_alpha_beta/M5/training/checkpoints/best.pt",
+      "checkpoint_sha256": "189fe31e7ed8557ae20f97e70ba4f98f0c5ae3ea92f93e15a639702cb475f6b5",
+      "attrs": {
+        "checkpoint": "/home/user02/grace_remote_train/data_driven_alpha_beta/M5/training/checkpoints/best.pt",
+        "split": "test",
+        "tile_size": 60,
+        "stride": 60,
+        "coarse_factor": 6,
+        "default_prediction_variant": "corrected",
+        "mass_closure_correction_applied": "true",
+        "mass_closure_blend_factor": 0.05,
+        "strict_mass_projection_applied": "false",
+        "strict_mass_projection_operator": "masked_coslat_area_weighted_block_mean",
+        "strict_mass_projection_refinement_steps": 2,
+        "regional_weight_adjustment_applied": "false",
+        "reliability_gate_exported": "false",
+        "reliability_gate_interpretation": "sigmoid gate multiplying the area-centered high-frequency residual; not an independently calibrated probability"
+      }
+    }
+  ],
+  "dataset": "/home/user02/grace_remote_train/data_processed/training_rescue_v2/grace_downscaling_training_dataset_mm_area.zarr",
+  "dataset_chunks_verified": 700,
+  "well_monthly_sha256": "c0f1c13217e7e703cee24f307db53be890c16976f66d05882dc0995f8b56b6d7",
+  "well_monthly_path": "/home/user02/grace_remote_train/validation_extension_20260908/groundwater/well_monthly.csv",
+  "coarse_factor": 6,
+  "coarse_operator": "masked_coslat_area_weighted_block_mean",
+  "membership_operator": "scripts.eval.common.repeat_coarse_to_fine",
+  "dataset_attrs": {
+    "canonical_water_storage_units": "mm EWH",
+    "coarse_factor": 6,
+    "coarse_operator": "masked_coslat_area_weighted_block_mean",
+    "description": "Training-ready dataset for GRACE adaptive physical soft-constraint downscaling.",
+    "fine_jpl_interpretation": "gridded-JPL consistency target; not independent 0.5-degree truth",
+    "notes": "Dynamic inputs are converted to mm EWH and aligned on the common 0.5 degree grid and overlap window.",
+    "split_mapping": "0=train, 1=val, 2=test",
+    "time_range": "2002-04 to 2022-12",
+    "weight_provenance": "{\"consistency_source_sha256\": \"dbb750d7281a527ffaec600f1f49f74143c6760c226a4662ec48d39873d17d62\", \"fit_end_effective\": \"2016-12-01\", \"fit_n_months\": 156, \"fit_start_effective\": \"2002-04-01\", \"status\": \"train_only_verified\"}",
+    "wghm_abs_max_mm": 10000.0
+  },
+  "grid_shape": [
+    360,
+    720
+  ],
+  "fine_origin_centres": [
+    -89.75,
+    -179.75
+  ],
+  "code_sources": {
+    "scripts/eval/common.py": "e1b7e9b65d8e1a74c635b6169d02bad9e884292440ff603858a4e40e9da0e172",
+    "utils/mass_closure.py": "b00c6ce97009ea039262e22f5e2f38f7f527b50e7e6d92e7233db7b5ef2aba8c",
+    "scripts/preprocess/build_training_dataset.py": "f18a24c163095ca834e1d2edee7ffca60906cc2955c93af12703f5f242da58c1",
+    "scripts/eval/extract_intra3deg_sources.py": "951c10ecbb84ded0ecb16ac41363376597518af7a4c67c4a1577d8d9aae6f7ef"
+  },
+  "beta": {
+    "path": "/home/user02/grace_remote_train/data_driven_alpha_beta/weights/beta_data_driven.nc",
+    "sha256": "757715d20afd21f87e880e623de0dfc6ac34643a7c7c6d04200b21f5fe175f6e"
+  },
+  "git_commit": null,
+  "export_utc": "2026-09-21T11:04:02.719334+00:00",
+  "bundle_sha256": "c26a6259862233e8387cf45b816df2948445db6fc732bf68ad0f6e98b6c9bb32"
+}

@@ -1,0 +1,16 @@
+path,bytes,reason
+data_processed/training_rescue_v2/grace_downscaling_training_dataset_mm_area.zarr,187253589,178.6 MiB logical dataset; omitted as a large processed training cube; exact 700-file manifest included.
+data_processed/independent_priors/gldas_noah_twsa_05deg_200204_202212.nc,222937694,212.6 MiB; large processed structural parent product.
+data_processed/independent_priors/clm5_twsa_05deg_200204_201412.nc,159686486,152.3 MiB; large processed structural parent product.
+data_driven_alpha_beta/M0/inference/test.nc,200135634,190.9 MiB per global prediction cube; frozen hash in inference_manifest.csv.
+data_driven_alpha_beta/M0/training/checkpoints/best.pt,23493221,Five trained checkpoints total 112.0 MiB; omitted with global inference artifacts; frozen checkpoint hashes included.
+data_driven_alpha_beta/M1/inference/test.nc,200135634,190.9 MiB per global prediction cube; frozen hash in inference_manifest.csv.
+data_driven_alpha_beta/M1/training/checkpoints/best.pt,23493221,Five trained checkpoints total 112.0 MiB; omitted with global inference artifacts; frozen checkpoint hashes included.
+data_driven_alpha_beta/M2/inference/test.nc,200135634,190.9 MiB per global prediction cube; frozen hash in inference_manifest.csv.
+data_driven_alpha_beta/M2/training/checkpoints/best.pt,23493157,Five trained checkpoints total 112.0 MiB; omitted with global inference artifacts; frozen checkpoint hashes included.
+data_driven_alpha_beta/M3/inference/test.nc,200135634,190.9 MiB per global prediction cube; frozen hash in inference_manifest.csv.
+data_driven_alpha_beta/M3/training/checkpoints/best.pt,23493157,Five trained checkpoints total 112.0 MiB; omitted with global inference artifacts; frozen checkpoint hashes included.
+data_driven_alpha_beta/M5/inference/test.nc,200135634,190.9 MiB per global prediction cube; frozen hash in inference_manifest.csv.
+data_driven_alpha_beta/M5/training/checkpoints/best.pt,23493093,Five trained checkpoints total 112.0 MiB; omitted with global inference artifacts; frozen checkpoint hashes included.
+validation_extension_20260908/baselines/MLR_DS/test.nc,,Large statistical-baseline prediction dependency of the archived evaluator; not a paper ablation model.
+validation_extension_20260908/baselines/RF_DS/test.nc,,Large statistical-baseline prediction dependency of the archived evaluator; not a paper ablation model.

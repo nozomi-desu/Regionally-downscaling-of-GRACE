@@ -1,0 +1,28 @@
+{
+  "unique_measurements": 164753,
+  "retained_measurements": 156363,
+  "retained_wells": 22084,
+  "wells_at_least_24_months": 1116,
+  "wells_at_least_12_months": 3736,
+  "rejections": {
+    "not_explicitly_static": 7199,
+    "not_approved": 1127,
+    "affected_or_censored": 64
+  },
+  "qualifiers": {
+    "Static": 157475,
+    "Above": 3284,
+    "Pumping": 2841,
+    "NoMeasurement": 1409,
+    "Dry": 1094,
+    "Obstructed": 152,
+    "GWSWAffected": 42,
+    "ForeignSubstance": 534,
+    "Flowing": 83,
+    "Revised": 1108,
+    "Below": 222,
+    "Frozen": 10,
+    "GWTideAffected": 486
+  },
+  "qc": "Approved and explicitly Static; ft/m only; median within site-month; no candidate-dependent exclusions"
+}

@@ -1,0 +1,12 @@
+{
+  "independent_scipy_PCC_max_error": 5.551115123125783e-16,
+  "pair_model_rows_checked": 1540,
+  "same_coarse_membership_all": true,
+  "max_raw_corrected_pair_difference_mm": 3.0517578125e-05,
+  "well_ge24": 1116,
+  "ge24_nonconstant": 1116,
+  "ge24_nonconstant_on_land": 862,
+  "excluded_pair_reasons": {
+    "insufficient_common_months": 21
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "alpha_tertile_edges": [
+    0.11590372771024704,
+    0.5660077929496765
+  ],
+  "beta_tertile_edges": [
+    0.0,
+    0.20056438446044922
+  ],
+  "ties": "np.digitize right=True; values equal to threshold enter lower bin; beta=0 included in low stratum",
+  "population": "all finite land cells in frozen weights; not selected external coverage",
+  "highpass": "mask normalized Gaussian sigma=3 cells kernel=13, nearest edge",
+  "spectrum": "demeaned field, zeros outside common mask, radial mean FFT; cycles per 0.5-degree cell; no km conversion; masked-window diagnostic",
+  "high_frequency": "cycles/cell >= 1/6; HFI exploratory",
+  "HFI_denominator_floor": "1e-6 times global median positive WGHM high-pass mean-square; absolute denominator cutoff"
+}

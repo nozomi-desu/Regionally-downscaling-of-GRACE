@@ -1,0 +1,7 @@
+path,change,original_sha256
+validation_rebuild/scripts/additional_diagnostics.py,Resolve the project/output root relative to this file; numerical logic unchanged.,753cbc84e23290b5622f120eed53bb1259265ebeeb360416587dfdd742efc559
+validation_rebuild/scripts/loss_scale_checkpoint_audit.py,Resolve the project/output root relative to this file; numerical logic unchanged.,9a25b306c610c4c5ced3ace226c87aeb2ade784ae588589cf9315bb69b26d18e
+validation_rebuild/scripts/recompute_metrics.py,Resolve the project/output root relative to this file; numerical logic unchanged.,4b249c8f0a327d5e175d3ce3b94a22235c1be51b7c0c0e8696aac4f746fb4126
+validation_rebuild/scripts/redesign_maps_20260917.py,Resolve the project/output root relative to this file; numerical logic unchanged.,5fc615e1a220f2f598d40060e169fd44e8474dac988aeec154da5f7f1ccebc56
+validation_rebuild/scripts/render_figures.py,Resolve the project/output root relative to this file; numerical logic unchanged.,54dd7be61715cb7d9168688e3a9886d9467021d1c0288d030f2c8a76c1ffca15
+validation_rebuild/scripts/weight_diagnostics.py,Resolve the project/output root relative to this file; numerical logic unchanged.,247c7f8caed180338372a0fd42195ea4d405f1f83dd7529a54fee93d8a118e35

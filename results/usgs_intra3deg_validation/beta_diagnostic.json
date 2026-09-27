@@ -1,0 +1,8 @@
+{
+  "status": "exploratory",
+  "edges": [
+    0.21382821599642435,
+    0.2720100084940592
+  ],
+  "definition": "arithmetic mean of beta_i and beta_j; pair-weighted association; whole-coarse-cell bootstrap"
+}

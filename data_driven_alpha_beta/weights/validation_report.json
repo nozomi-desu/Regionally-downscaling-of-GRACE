@@ -1,0 +1,138 @@
+{
+  "status": "PASS",
+  "fields": {
+    "alpha": {
+      "min": 0.0,
+      "max": 0.9190306663513184,
+      "mean": 0.36239033937454224,
+      "median": 0.42145535349845886,
+      "finite_count": 85912,
+      "nan_count": 173288,
+      "inf_count": 0
+    },
+    "D_alpha": {
+      "min": 0.08096934109926224,
+      "max": 1.0,
+      "mean": 0.6376096606254578,
+      "median": 0.5785446166992188,
+      "finite_count": 85912,
+      "nan_count": 173288,
+      "inf_count": 0
+    },
+    "beta": {
+      "min": 0.0,
+      "max": 0.6884472370147705,
+      "mean": 0.13227465748786926,
+      "median": 0.11963438987731934,
+      "finite_count": 85912,
+      "nan_count": 173288,
+      "inf_count": 0
+    },
+    "D_beta": {
+      "min": 0.3115527629852295,
+      "max": 1.0,
+      "mean": 0.8677253127098083,
+      "median": 0.8803656101226807,
+      "finite_count": 85912,
+      "nan_count": 173288,
+      "inf_count": 0
+    }
+  },
+  "train_start": "2002-04-01",
+  "train_end": "2016-12-01",
+  "train_n_months": 156,
+  "beta_sources": [
+    "ERA5_TWSA",
+    "GLDAS_Noah_TWSA",
+    "CLM5_TWSA"
+  ],
+  "q_s": {
+    "CLM5_TWSA": 10.560245609474126,
+    "ERA5_TWSA": 30.12058665391639,
+    "GLDAS_Noah_TWSA": 8.119596083681508,
+    "WGHM": 22.883013007124273
+  },
+  "land_cells": 85912,
+  "alpha_zero_land_cells": 24361,
+  "beta_no_evidence_land_cells": 29496,
+  "source_count_land_histogram": {
+    "0": 29496,
+    "1": 414,
+    "2": 3952,
+    "3": 52050
+  },
+  "valid_time_count_land_min": 0,
+  "valid_time_count_land_max": 156,
+  "alpha_diagnostics": [
+    {
+      "diagnostic": "pcc",
+      "spearman_rho": 0.8503453427550857,
+      "p_value": 0.0,
+      "n": 2178
+    },
+    {
+      "diagnostic": "trend_difference",
+      "spearman_rho": 0.4571521273950048,
+      "p_value": 1.0019176730817672e-153,
+      "n": 2978
+    },
+    {
+      "diagnostic": "annual_amplitude_difference",
+      "spearman_rho": 0.5858780242449189,
+      "p_value": 4.845205942458155e-274,
+      "n": 2978
+    },
+    {
+      "diagnostic": "nrmse",
+      "spearman_rho": -0.788876138608691,
+      "p_value": 0.0,
+      "n": 2178
+    }
+  ],
+  "beta_source_diagnostics": [
+    {
+      "source_name": "ERA5_TWSA",
+      "parent_product": "ERA5",
+      "q_s": 30.12058665391639,
+      "valid_gradient_comparisons": 8799066,
+      "time_start": "2002-04-01",
+      "time_end_available": "2016-12-01"
+    },
+    {
+      "source_name": "GLDAS_Noah_TWSA",
+      "parent_product": "GLDAS-Noah v3.3",
+      "q_s": 8.119596083681508,
+      "valid_gradient_comparisons": 8229740,
+      "time_start": "2002-04-01",
+      "time_end_available": "2016-12-01"
+    },
+    {
+      "source_name": "CLM5_TWSA",
+      "parent_product": "CLM5.0 GSWP3",
+      "q_s": 10.560245609474126,
+      "valid_gradient_comparisons": 7684635,
+      "time_start": "2002-04-01",
+      "time_end_available": "2014-11-01"
+    }
+  ],
+  "beta_leave_one_source_out": [
+    {
+      "left_out_source": "ERA5_TWSA",
+      "spearman_rho": 0.9565321801709928,
+      "mae": 0.0259083323180675,
+      "n": 85912
+    },
+    {
+      "left_out_source": "GLDAS_Noah_TWSA",
+      "spearman_rho": 0.968001205504619,
+      "mae": 0.025145586580038,
+      "n": 85912
+    },
+    {
+      "left_out_source": "CLM5_TWSA",
+      "spearman_rho": 0.9724171451748445,
+      "mae": 0.0284299124032259,
+      "n": 85912
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+variable,source,shape,finite,positive,sha256_values
+land_mask,/home/user02/grace_remote_train/data_processed/training_rescue_v2/grace_downscaling_training_dataset_mm_area.zarr,"(360, 720)",259200,85912,9d11240daef371de6c444d93f3cc3fa05384b70d8a39248aa2d2083386158f9e
+valid_mask,/home/user02/grace_remote_train/data_processed/training_rescue_v2/grace_downscaling_training_dataset_mm_area.zarr,"(214, 360, 720)",55468800,12825230,b177cabe6d799c302cc950b2eada049314490058543b4627f4224c4427ed5420
+cell_area_weight,/home/user02/grace_remote_train/data_processed/training_rescue_v2/grace_downscaling_training_dataset_mm_area.zarr,"(360, 720)",259200,259200,d0eb5840f1d150783da39c2eeeed82f06fc4023acf95959f73e02c6e44f6b3db
+human_activity_index,/home/user02/grace_remote_train/data_processed/training_rescue_v2/grace_downscaling_training_dataset_mm_area.zarr,"(360, 720)",259200,26375,454b91bc5b7865e41c4ca93c812df9b6aa6bb21d5386d1a7093f0d6f8aeef37c
+glacier_fraction,/home/user02/grace_remote_train/data_processed/training_rescue_v2/grace_downscaling_training_dataset_mm_area.zarr,"(360, 720)",259200,4197,0d177f9688396277dcfa3f9bbd1a9359c717e21a8b63f9681dc076f1628d6540
+aridity_mask,/home/user02/grace_remote_train/data_processed/training_rescue_v2/grace_downscaling_training_dataset_mm_area.zarr,"(360, 720)",259200,24016,fed7410bfabd75eabb69d5fe65671e15117c384f889fe6a631112e58c324977f

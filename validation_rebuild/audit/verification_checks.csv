@@ -1,0 +1,35 @@
+check,pass_,actual
+split_0_count,True,156
+split_1_count,True,22
+split_2_count,True,36
+M0_checkpoint_hash,True,81320a125b11fd56a5cbb5605409496c4c176c5ad9cb1aece5eb5bdb5d097060
+M0_embedded_config,True,exact config equality
+M0_valid_mask_matches_dataset,True,True
+M0_target_jplm_twsa_matches_dataset,True,True
+M0_input_wghm_twsa_matches_dataset,True,True
+M1_checkpoint_hash,True,5efe328ea700cc5052c6718c8caf9349831198c0fc545d43ab2c22f3b2c060a1
+M1_embedded_config,True,exact config equality
+M1_valid_mask_matches_dataset,True,True
+M1_target_jplm_twsa_matches_dataset,True,True
+M1_input_wghm_twsa_matches_dataset,True,True
+M2_checkpoint_hash,True,49d5b74900c9773d4b865de95a51734efa769f83ba024e32fb9bbb75a7b2f57d
+M2_embedded_config,True,exact config equality
+M2_valid_mask_matches_dataset,True,True
+M2_target_jplm_twsa_matches_dataset,True,True
+M2_input_wghm_twsa_matches_dataset,True,True
+M3_checkpoint_hash,True,ffd1ff349dc1567b0c8d54b2bce090e122912a55926884f46e6f242a21fe493e
+M3_embedded_config,True,exact config equality
+M3_valid_mask_matches_dataset,True,True
+M3_target_jplm_twsa_matches_dataset,True,True
+M3_input_wghm_twsa_matches_dataset,True,True
+M5_checkpoint_hash,True,189fe31e7ed8557ae20f97e70ba4f98f0c5ae3ea92f93e15a639702cb475f6b5
+M5_embedded_config,True,exact config equality
+M5_valid_mask_matches_dataset,True,True
+M5_target_jplm_twsa_matches_dataset,True,True
+M5_input_wghm_twsa_matches_dataset,True,True
+shared_model,True,compared all five configs
+shared_loss,True,compared all five configs
+shared_regional_weights,True,compared all five configs
+shared_postprocess,True,compared all five configs
+shared_training,True,all training fields except output_dir
+shared_inputs,True,same dataset; alpha beta overrides are experimental treatment

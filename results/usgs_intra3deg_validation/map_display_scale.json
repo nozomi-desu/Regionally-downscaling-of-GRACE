@@ -1,0 +1,15 @@
+{
+  "symmetric_limit": 0.5260231867257013,
+  "quantiles": [
+    0.02,
+    0.98
+  ],
+  "n_clipped": 2,
+  "projection": "Lambert conformal conic",
+  "extent": [
+    -121.5,
+    -67.5,
+    22.5,
+    46.5
+  ]
+}

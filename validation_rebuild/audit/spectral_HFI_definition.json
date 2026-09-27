@@ -1,0 +1,6 @@
+{
+  "definition": "sum of radial-mean spectral powers for normalized wavenumber >=1/6 cycles per cell; fixed 5-degree boxes; monthly HFI then region temporal median; not continuous physical wavelength",
+  "denominator_floor": 0.00014342357494488985,
+  "rho_beta": -0.04039037446245992,
+  "N_valid": 245
+}

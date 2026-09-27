@@ -1,0 +1,7 @@
+variant,threshold,n_coarse_cells,n_pairs,n_fine_cells,n_wells
+corrected,18,23,324,106,687
+corrected,24,23,308,105,686
+corrected,30,21,261,90,636
+raw,18,23,324,106,687
+raw,24,23,308,105,686
+raw,30,21,261,90,636
